@@ -1,0 +1,40 @@
+syntax = "proto3";
+
+option csharp_namespace = "GrpcECommerceService";
+
+service Product {
+  rpc GetProduct (ProductRequest) returns (ProductReply);
+  rpc ListProducts (Empty) returns (ProductListReply);
+}
+
+service Order {
+  rpc CreateOrder (OrderRequest) returns (OrderReply);
+  rpc GetOrder (OrderRequest) returns (OrderReply);
+}
+
+message Empty {}
+
+message ProductRequest {
+  int32 productId = 1;
+}
+
+message ProductReply {
+  int32 productId = 1;
+  string name = 2;
+  float price = 3;
+}
+
+message ProductListReply {
+  repeated ProductReply products = 1;
+}
+
+message OrderRequest {
+  int32 orderId = 1;
+  repeated int32 productIds = 2;
+}
+
+message OrderReply {
+  int32 orderId = 1;
+  repeated ProductReply products = 2;
+  float totalAmount = 3;
+}

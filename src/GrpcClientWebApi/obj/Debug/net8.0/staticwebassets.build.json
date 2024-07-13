@@ -1,0 +1,23 @@
+{
+  "Version": 1,
+  "Hash": "A1nYxC1/y4SYlvQcKNZ90q5jNvW3SnP9DeiHHcxuuyo=",
+  "Source": "GrpcClientWebApi",
+  "BasePath": "_content/GrpcClientWebApi",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [
+    {
+      "Identity": "/Users/fabio/Documents/Development/NET/GRPC/src/GrpcECommerceService/GrpcECommerceService.csproj",
+      "Version": 2,
+      "Source": "GrpcECommerceService",
+      "GetPublishAssetsTargets": "ComputeReferencedStaticWebAssetsPublishManifest;GetCurrentProjectPublishStaticWebAssetItems",
+      "AdditionalPublishProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalPublishPropertiesToRemove": "WebPublishProfileFile;TargetFramework",
+      "GetBuildAssetsTargets": "GetCurrentProjectBuildStaticWebAssetItems",
+      "AdditionalBuildProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalBuildPropertiesToRemove": "WebPublishProfileFile;TargetFramework"
+    }
+  ],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

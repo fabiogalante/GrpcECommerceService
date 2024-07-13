@@ -1,0 +1,28 @@
+syntax = "proto3";
+
+option csharp_namespace = "CalculatorDemo";
+
+package Calculator;
+
+service MathOperations {
+  rpc Add (AddRequest) returns (AddReply) {}
+  rpc Subtract (SubtractRequest) returns (SubtractReply) {}
+}
+
+message AddRequest {
+  int32 x = 1;
+  int32 y = 2;
+}
+
+message AddReply {
+  int32 result = 1;
+}
+
+message SubtractRequest {
+  int32 x = 1;
+  int32 y = 2;
+}
+
+message SubtractReply {
+  int32 result = 1;
+}
